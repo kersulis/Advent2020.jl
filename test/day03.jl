@@ -1,8 +1,10 @@
 using Advent2020.Day03
 
-input = joinpath(inputs_path, "day03.txt") |> readlines
+input_path = joinpath(inputs_path, "day03.txt")
 
 @testset "Day 3" begin
+    input = readlines(input_path)
+
     # Part 1 solution
     @test slope_path(input, 3, 1) |> count_trees == 189
 

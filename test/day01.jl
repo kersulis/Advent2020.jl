@@ -1,8 +1,10 @@
 using Advent2020.Day01
 
-input = joinpath(inputs_path, "day01.txt") |> readlines
+input_path = joinpath(inputs_path, "day01.txt")
 
 @testset "Day 1" begin
+    input = readlines(input_path)
+
     numbers = parse.(Int64, input)
 
     # Part 1 solution
