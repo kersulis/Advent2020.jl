@@ -7,11 +7,15 @@ input_path = joinpath(inputs_path, "day01.txt")
 
     numbers = parse.(Int64, input)
 
-    # Part 1 solution
-    x, y = two_that_sum_to_total(2020, numbers)
-    @test x * y == 388075
+    @testset "Part 1" begin
+        # Part 1 solution
+        x, y = two_that_sum_to_total(2020, numbers)
+        @test x * y == 388075
+    end
 
-    # Part 2 solution
-    x, y, z = three_that_sum_to_total(2020, numbers)
-    @test x * y * z == 293450526
+    @testset "Part 2" begin
+        # Part 2 solution
+        x, y, z = three_that_sum_to_total(2020, numbers)
+        @test x * y * z == 293450526
+    end
 end
