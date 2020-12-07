@@ -1,4 +1,4 @@
-using Advent2020, Test
+using Test
 
 const inputs_path = joinpath(@__DIR__, "../inputs/")
 

@@ -1,13 +1,15 @@
 using Advent2020.Day1
 
-input = parse.(Int64, readlines(joinpath(inputs_path, "day01.txt")))
+input = readlines(joinpath(inputs_path, "day01.txt"))
 
 @testset "Day 1" begin
+    numbers = parse.(Int64, input)
+
     # Part 1 solution
-    idx1, idx2 = two_that_sum_to_total(2020, input)
-    @test input[idx1] * input[idx2] == 388075
+    x, y = two_that_sum_to_total(2020, numbers)
+    @test x * y == 388075
 
     # Part 2 solution
-    idx1, idx2, idx3 = three_that_sum_to_total(2020, input)
-    @test input[idx1] * input[idx2] * input[idx3] == 293450526
+    x, y, z = three_that_sum_to_total(2020, numbers)
+    @test x * y * z == 293450526
 end
