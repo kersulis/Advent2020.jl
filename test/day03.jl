@@ -1,4 +1,4 @@
-using Advent2020.Day3
+using Advent2020.Day03
 
 input = joinpath(inputs_path, "day03.txt") |> readlines
 

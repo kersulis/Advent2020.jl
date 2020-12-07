@@ -1,6 +1,6 @@
-using Advent2020.Day1
+using Advent2020.Day01
 
-input = readlines(joinpath(inputs_path, "day01.txt"))
+input = joinpath(inputs_path, "day01.txt") |> readlines
 
 @testset "Day 1" begin
     numbers = parse.(Int64, input)

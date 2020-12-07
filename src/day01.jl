@@ -1,4 +1,4 @@
-module Day1
+module Day01
 
 export two_that_sum_to_total, three_that_sum_to_total
 

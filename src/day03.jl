@@ -1,4 +1,4 @@
-module Day3
+module Day03
 
 export slope_path, count_trees
 

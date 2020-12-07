@@ -1,6 +1,6 @@
-using Advent2020.Day2
+using Advent2020.Day02
 
-input = readlines(joinpath(inputs_path, "day02.txt"))
+input = joinpath(inputs_path, "day02.txt") |> readlines
 
 @testset "Day 2" begin
     # Part 1 solution
